@@ -1,0 +1,61 @@
+/* css container form input căn giữa  */
+.searchMovie {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* css container form input search */
+.container {
+  background-color: white;
+  width: 490px;
+  border-radius: 3px;
+}
+
+/* css input search */
+.inputSearch {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #47caec;
+  margin-top: 10px;
+  padding: 0 12px;
+}
+.inputSearch input {
+  font-size: 12px;
+  font-weight: 200;
+  opacity: 0.8;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+/*  css icon search */
+.btnSearch {
+  cursor: pointer;
+}
+
+/* css div button search */
+.btnSearchMovie {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* css button search */
+.btnSearchMovie button {
+  color: white;
+  margin: 26px 20px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btnSearchMovie button:first-child {
+  background-color: white;
+  border: none;
+  color: black;
+  margin-right: 0;
+}
+.btnSearchMovie button:last-child {
+  background-color: #00bbec;
+  border: none;
+}

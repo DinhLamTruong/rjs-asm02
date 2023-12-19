@@ -1,0 +1,67 @@
+/* css title movie */
+.movieList h4 {
+  margin-top: 40px;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+/* css image (tag img) */
+.image {
+  width: 168px;
+  height: 110px;
+  margin-right: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  flex: 1 0;
+}
+.image:hover {
+  transform: scale(1.1);
+}
+
+/*  css chung wrapper ảnh 
+    .image-container : ảnh backdrop
+    .isPoster: ảnh poster
+*/
+.image-container,
+.imgPoster {
+  display: flex;
+  overflow-x: auto;
+  height: 148px;
+  margin: 18px 20px;
+  align-items: center;
+}
+
+/* css ảnh poster */
+.imgPoster {
+  height: 216px;
+}
+.imgPoster img {
+  height: 175px;
+}
+
+/* Tuỳ chỉnh thanh ngang cuộn */
+.image-container::-webkit-scrollbar,
+.imgPoster::-webkit-scrollbar {
+  height: 7px;
+}
+
+.image-container::-webkit-scrollbar-track,
+.imgPoster::-webkit-scrollbar-track {
+  background: #11171a;
+}
+
+.image-container::-webkit-scrollbar-thumb,
+.imgPoster::-webkit-scrollbar-thumb {
+  background: #292929;
+}
+
+.image-container::-webkit-scrollbar-thumb:hover,
+.imgPoster::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* css wrapper component movie detail */
+.showMovieDetail {
+  background-color: #141414;
+  width: 100%;
+}

@@ -1,0 +1,41 @@
+/* css wrapper movie */
+.movieDetail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* css phần mô tả movie */
+.descriptions {
+  width: 46%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.descriptions-title {
+  font-size: 24px;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+}
+.descriptions-date,
+.descriptions-vote {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.descriptions-overview {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* css video movie */
+.movieVideo {
+  width: 50%;
+  margin: 14px;
+}
+.movieVideo img {
+  width: 100%;
+  object-fit: cover;
+  height: 370px;
+}
