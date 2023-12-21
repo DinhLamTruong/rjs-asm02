@@ -52,10 +52,10 @@ const MovieItem = ({ movieTopic, title, isPoster }) => {
     return movie;
   };
 
-  // kiểm tra props isPoster để tạo ảnh
-  // ảnh thuộc poster hay backdrop
+  // kiểm tra props isPoster để tạo ảnh thuộc poster hay backdrop
   let movie;
   let classImg;
+  
   if (isPoster === true) {
     movie = createImg(movieTopic, 'poster_path');
     classImg = 'imgPoster';

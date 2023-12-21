@@ -28,6 +28,7 @@ const MovieList = () => {
   } = useContext(MovieContext);
 
   // fetch data movie theo từng chủ đề
+
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieOriginal(dataMovie.results);
@@ -35,6 +36,7 @@ const MovieList = () => {
     fetchMovieOriginal({ url: urls[0] }, fetchMovie);
   }, [fetchMovieOriginal, urls]);
 
+  // Xu hướng
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieTrend(dataMovie.results);
@@ -42,6 +44,7 @@ const MovieList = () => {
     fetchMovieTrend({ url: urls[1] }, fetchMovie);
   }, [fetchMovieTrend, urls]);
 
+  // Xếp hạng cao
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieTopRated(dataMovie.results);
@@ -49,6 +52,7 @@ const MovieList = () => {
     fetchMovieTopRated({ url: urls[2] }, fetchMovie);
   }, [fetchMovieTopRated, urls]);
 
+  // Hành động
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieAction(dataMovie.results);
@@ -56,6 +60,7 @@ const MovieList = () => {
     fetchMovieAction({ url: urls[3] }, fetchMovie);
   }, [fetchMovieAction, urls]);
 
+  // Hài
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieComedy(dataMovie.results);
@@ -63,18 +68,23 @@ const MovieList = () => {
     fetchMovieComedy({ url: urls[4] }, fetchMovie);
   }, [fetchMovieComedy, urls]);
 
+  // Kinh dị
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieHorror(dataMovie.results);
     };
     fetchMovieHorror({ url: urls[5] }, fetchMovie);
   }, [fetchMovieHorror, urls]);
+
+  // Lãng mạn
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieRomance(dataMovie.results);
     };
     fetchMovieRomance({ url: urls[6] }, fetchMovie);
   }, [fetchMovieRomance, urls]);
+
+  // Tài liệu
   useEffect(() => {
     const fetchMovie = dataMovie => {
       setMovieDocumentaries(dataMovie.results);
@@ -82,7 +92,6 @@ const MovieList = () => {
     fetchMovieDocumentaries({ url: urls[7] }, fetchMovie);
   }, [fetchMovieDocumentaries, urls]);
 
- 
   return (
     <div className="movieList">
       <MovieItem movieTopic={movieOriginal} isPoster={true} />

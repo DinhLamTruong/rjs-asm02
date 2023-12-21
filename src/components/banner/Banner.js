@@ -24,7 +24,7 @@ const Banner = () => {
   const movieBanner = useMemo(() => {
     return movieOriginal[Math.floor(Math.random() * movieOriginal.length - 1)];
   }, [movieOriginal]);
-
+  
   return (
     <>
       <NavBar />

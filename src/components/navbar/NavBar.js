@@ -7,12 +7,12 @@ const NavBar = () => {
   const searchPage = useNavigate();
 
   // hàm bắt event cuộn > 100px set background nav màu đen
-  //  event < 100 px màu trong suốt
+  // event < 100 px màu trong suốt
   const handleScroll = () => {
     if (window.scrollY > 100) {
       const element = document.getElementById('nav');
       element.classList.add('black');
-    } else if (window.scrollY < 100) {
+    } else {
       const element = document.getElementById('nav');
       element.classList.remove('black');
     }

@@ -64,7 +64,7 @@ const MovieDetail = ({ movieDetail }) => {
     },
   };
 
-  //  để hiển thị ảnh
+  // hiển thị ảnh khi không có video
   let urlImg = movieDetail.backdrop_path
     ? movieDetail.backdrop_path
     : movieDetail.poster_path;

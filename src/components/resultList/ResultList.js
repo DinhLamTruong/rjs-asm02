@@ -1,4 +1,5 @@
 import React, { useState, memo, useContext, useEffect } from 'react';
+
 import MovieDtail from '../movieDetail/MovieDetail';
 import { CLoseContext } from '../../stores/CloseResultProvider';
 import './ResultList.css';
@@ -13,7 +14,7 @@ const ResultList = ({ movieDataSearch }) => {
   // context set state show component deital
   const { handleCLose, openResult } = useContext(CLoseContext);
 
-  // hàm set lại state show component
+  // hàm set lại state show component movieDetail khi click reset
   // set state vói tham số true => false
   useEffect(() => {
     const handleCLoseDetail = isClose => {
@@ -25,7 +26,7 @@ const ResultList = ({ movieDataSearch }) => {
   // hàm tạo image với data movie tìm kiếm được
   // khi ảnh được click set info movie vào state
   // set state show component
-  // khi click ảnh khác nhau set state => true
+  // khi click ảnh khác nhau set state movie detail => true
   const createImgList = movies => {
     return movies.map((movie, index) => {
       return (
